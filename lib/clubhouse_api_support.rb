@@ -33,12 +33,12 @@ module ClubhouseApiSupport
       "Accept": "application/json",
       "Accept-Language": "en-JP;q=1, ja-JP;q=0.9",
       "Accept-Encoding": "gzip, deflate",
-      "CH-AppBuild": ${API_BUILD_ID},
-      "CH-AppVersion": ${API_BUILD_VERSION},
-      "User-Agent": ${API_UA},
+      "CH-AppBuild": "#{API_BUILD_ID}",
+      "CH-AppVersion": "#{API_BUILD_VERSION}",
+      "User-Agent": "#{API_UA}",
       "Connection": "close",
       "Content-Type": "application/json; charset=utf-8",
-      "Cookie": ${"__cfduid="SecureRandom.hex(21)random.randint(1, 9)}
+      "Cookie": "__cfduid=#{SecureRandom.hex(21)}#{rand(1..9)}"}
     }
 
 
